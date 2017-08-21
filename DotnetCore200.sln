@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCore200", "DotnetCore200\DotnetCore200.csproj", "{121CFFC1-6B5A-4501-B57E-C35D7A932760}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore200", "DotnetCore200\DotNetCore200.csproj", "{121CFFC1-6B5A-4501-B57E-C35D7A932760}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreClassLib", "CoreClassLib\CoreClassLib.csproj", "{B186A7DD-D901-4B63-BB84-3E8740E04DAA}"
 EndProject

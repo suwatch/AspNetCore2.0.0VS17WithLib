@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "DotnetCore200": {
+    "DotNetCore200": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
