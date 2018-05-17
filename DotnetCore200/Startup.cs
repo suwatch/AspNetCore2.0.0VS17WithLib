@@ -6,13 +6,15 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace DotNetCore200
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, ILogger<Startup> logger)
         {
+            logger.LogError(string.Format("Startup.Startup called at {0}", DateTime.UtcNow));
             Configuration = configuration;
         }
 
@@ -25,8 +27,10 @@ namespace DotNetCore200
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILogger<Startup> logger)
         {
+            logger.LogError(string.Format("Startup.Configure called at {0}", DateTime.UtcNow));
+
             var str1 = CoreClassLib.Class1.returnStr();
             var str2 = StandardClassLib.Class1.returnStr();
             if (str1 != str2)
